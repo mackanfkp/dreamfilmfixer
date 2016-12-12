@@ -1,0 +1,13 @@
+# General
+._*
+.~lock.*
+.buildpath
+.DS_Store
+
+# FUSE for OS X
+.fuse_hidden*
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+

@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Dreamfilm Fixer",
+	"version": "1.2",
+	"browser_action": {
+		"default_icon": {
+			"19": "icon-19.png",
+			"38": "icon-38.png"
+		}
+	},
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://dreamfilmhd.bz/*", "http://dreamfilmhd.org/*", "http://*.vkpass.com/*"],
+			"js": ["jquery-3.1.1.min.js", "content.js"],
+			"run_at": "document_end"
+		}
+	]
+}
